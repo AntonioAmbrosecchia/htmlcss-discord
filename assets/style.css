@@ -1,6 +1,7 @@
 :root {
     --dis-sofondo_nav: #3161e0;
     --dis-sfondo_tasti: #23272a;
+    --dis-sfondo_tasto_basso: #8ea1e1;
     --dis-sfondo_lightdark: #f6f6f6;
 }
 
@@ -75,11 +76,19 @@ hr {
         background-size: 80%;
     }
 
+    #img_tec_box {
+        background-image: url(./img/item4-big.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
     #l_container {
         background-color: lightgray;
     }
 
-    #tec_box {}
+    #stelline {
+        background-image: url(./img/stars.svg);
+    }
 
     #about {
         background-color: rgb(228, 129, 145);
@@ -100,6 +109,8 @@ hr {
     #box_button_logo {
         background-color: rgb(229, 255, 0);
     }
+
+
 }
 
 
@@ -167,13 +178,18 @@ hr {
 
 #l_container {
     display: flex;
-    height: 1000px;
+    height: 1250px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 
 #tec_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     height: 900px;
     width: 80%;
 }
@@ -218,7 +234,7 @@ hr {
     padding-right: 10px;
 }
 
-#b_download {
+#top_b_download {
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;
@@ -293,4 +309,43 @@ h1 {
 #fandom_text_box {
     width: 30%;
     height: 400px;
+}
+
+#text_tec_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+#img_tec_box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 550px;
+    width: 100%;
+    margin-left: 250px;
+}
+
+#stelline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#lower_b_download {
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 30px;
+    border: 1px;
+    background-color: var(--dis-sfondo_tasto_basso);
+    color: white;
 }
