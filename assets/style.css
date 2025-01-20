@@ -1,7 +1,13 @@
+:root {
+    --dis-sofondo_nav: #3161e0;
+    --dis-sfondo_tasti: #23272a;
+}
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 
@@ -18,12 +24,15 @@ hr {
 
 .utility {
     header {
-        background-color: aqua;
+        background-color: var(--dis-sofondo_nav)
     }
 
-    #nav {
-        background-color: rgb(229, 255, 0);
+    #nav {}
 
+    a {
+        color: white;
+        text-decoration: none;
+        padding: 15px
     }
 
     #s_container_gray {
@@ -113,9 +122,10 @@ hr {
     justify-content: space-between;
     align-items: center;
     height: 45px;
-    width: 800px;
+    width: 1000px;
     padding-left: 15px;
     padding-right: 15px;
+
 }
 
 #download {
@@ -176,4 +186,12 @@ hr {
 .logo_button {
     display: flex;
     height: 20px;
+}
+
+.subscription {
+    border-radius: 30px;
+    border: 1px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
