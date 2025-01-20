@@ -27,8 +27,6 @@ hr {
         background-color: var(--dis-sofondo_nav)
     }
 
-    #nav {}
-
     a {
         color: white;
         text-decoration: none;
@@ -39,17 +37,15 @@ hr {
         background-color: lightgray;
     }
 
-    #s_container_blue {
-        background-color: rgb(23, 23, 192);
+    #jumbotron {
+        background-image: url('/assets/img/jumbo.png')
     }
 
     #s_container_black {
         background-color: rgb(40, 39, 39);
     }
 
-    #download {
-        background-color: rgb(240, 88, 113);
-    }
+    #download {}
 
     .box {
         background-color: lightblue;
@@ -103,11 +99,14 @@ hr {
     align-items: center;
 }
 
-#s_container_blue {
+#jumbotron {
     display: flex;
     height: 500px;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background-size: cover;
+
 }
 
 #s_container_black {
@@ -122,14 +121,17 @@ hr {
     justify-content: space-between;
     align-items: center;
     height: 45px;
-    width: 1000px;
+    width: 1100px;
     padding-left: 15px;
     padding-right: 15px;
 
 }
 
 #download {
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 60%;
 }
 
@@ -193,5 +195,29 @@ hr {
     border: 1px;
     padding: 5px;
     padding-left: 10px;
+    padding-right: 10px;
+}
+
+#b_download {
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px;
+    border-radius: 30px;
+}
+
+#open_browser {
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 30px;
+    border: 1px;
+    background-color: var(--dis-sfondo_tasti);
+    color: white;
+}
+
+#freccia {
+    font-size: 18px;
+    display: inline-block;
     padding-right: 10px;
 }
