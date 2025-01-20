@@ -1,6 +1,7 @@
 :root {
     --dis-sofondo_nav: #3161e0;
     --dis-sfondo_tasti: #23272a;
+    --dis-sfondo_lightdark: #f6f6f6;
 }
 
 body {
@@ -24,7 +25,7 @@ hr {
 
 .utility {
     header {
-        background-color: var(--dis-sofondo_nav)
+        background-color: var(--dis-sofondo_nav);
     }
 
     a {
@@ -34,34 +35,51 @@ hr {
     }
 
     #s_container_gray {
-        background-color: lightgray;
+        background-color: var(--dis-sfondo_lightdark);
     }
 
     #jumbotron {
         background-image: url(./img/jumbo.png);
+
     }
 
     #s_container_black {
         background-color: rgb(40, 39, 39);
     }
 
-    #download {}
+    #top_wave {
+        background-image: url(./img/wave_2.svg);
 
-    .box {
-        background-color: lightblue;
     }
 
-    .text_box {
-        background-color: pink;
+    #lower_wave {
+        background-image: url(./img/wave_4.svg);
+
+    }
+
+    #invite_box {
+        background-image: url(./img/item1.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
+    #community_box {
+        background-image: url(./img/item2.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
+    #fandom_box {
+        background-image: url(./img/item3.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
     }
 
     #l_container {
         background-color: lightgray;
     }
 
-    #tec_box {
-        background-color: green;
-    }
+    #tec_box {}
 
     #about {
         background-color: rgb(228, 129, 145);
@@ -136,12 +154,12 @@ hr {
     color: white;
 }
 
-.box {
-    width: 50%;
+#invite_box {
+    width: 40%;
     height: 400px;
 }
 
-.text_box {
+#invite_text_box {
     width: 30%;
     height: 400px;
 }
@@ -152,6 +170,7 @@ hr {
     height: 1000px;
     justify-content: center;
     align-items: center;
+
 }
 
 #tec_box {
@@ -225,13 +244,11 @@ hr {
 
 #container_bottoni {
     display: flex;
-    width: 32%;
+    width: 26%;
     justify-content: space-between;
-
-
 }
 
-p {
+#text_jumbotron {
     font-size: 15px;
     text-align: center;
     line-height: 1.7;
@@ -240,4 +257,40 @@ p {
 h1 {
     font-size: 40px;
     margin: 15px;
+}
+
+.p_description {
+    margin: 10px;
+    padding-top: 10px;
+}
+
+#community_box {
+    width: 40%;
+    height: 400px;
+}
+
+#community_text_box {
+    width: 30%;
+    height: 400px;
+}
+
+
+#top_wave {
+    display: flex;
+    height: 50px;
+}
+
+#lower_wave {
+    display: flex;
+    height: 50px;
+}
+
+#fandom_box {
+    width: 40%;
+    height: 400px;
+}
+
+#fandom_text_box {
+    width: 30%;
+    height: 400px;
 }
