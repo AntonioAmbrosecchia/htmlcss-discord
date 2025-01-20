@@ -38,7 +38,7 @@ hr {
     }
 
     #jumbotron {
-        background-image: url('/assets/img/jumbo.png')
+        background-image: url(./img/jumbo.png);
     }
 
     #s_container_black {
@@ -133,6 +133,7 @@ hr {
     justify-content: center;
     align-items: center;
     width: 60%;
+    color: white;
 }
 
 .box {
@@ -220,4 +221,23 @@ hr {
     font-size: 18px;
     display: inline-block;
     padding-right: 10px;
+}
+
+#container_bottoni {
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+
+
+}
+
+p {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 15px;
 }
